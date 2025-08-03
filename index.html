@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Biswanath Police Case Monitoring</title>
+  <link rel="manifest" href="manifest.json">
+  <script defer src="app.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📊 Biswanath Police Case Monitoring System</h1>
+  </header>
+  <main>
+    <section id="login">
+      <h2>🔑 Login</h2>
+      <input id="username" placeholder="Username"/>
+      <input id="password" type="password" placeholder="Password"/>
+      <button onclick="login()">Login</button>
+      <p id="login-status"></p>
+    </section>
+
+    <section id="dashboard" style="display:none;">
+      <h2>📂 Case Dashboard</h2>
+      <label>Filter by Police Station:</label>
+      <select id="psFilter"></select>
+      <table id="casesTable"></table>
+    </section>
+  </main>
+</body>
+</html>
